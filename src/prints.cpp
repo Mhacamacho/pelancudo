@@ -17,6 +17,7 @@ char * printConnections(std::vector<connection> &conexoes)	{
 		where += 12;
 		strcat(buffer,i->c_neuronio->identifier);
 		where += strlen(i->c_neuronio->identifier);
+		buffer[where++] = '\n';
 		strcat(buffer,"k_strength: ");
 		where += 12;
 		for(int j = 0; j < K_STRENGTH_SZ; j++)	{

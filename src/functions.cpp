@@ -1,23 +1,47 @@
 #include "../include/error.h"
+#include "../include/functions.h"
 #include <vector>
 #include <cmath>
 
-template <typename N>
-N dotproduct(const std::vector<N> &a, const std::vector<N> &b)	{
-	if(a.size() != b.size())	{
-		throw error::size;
-		return;
-	}
-	N sum;
-	for(int i=0, c = a.size(); i < c; ++i)
-		sum += a[i]*b[i];
-	return sum;
-}
+// Eh bom testar todas essas funcoes antes de usar...
 
-void QTvector(const double QT, std::vector<double> &QTreturn)	{
+void QTvector(double QT, std::vector<double> &QTreturn)	{
 	int a = MAX_QT_POWER;
 	while(a--)
-		// Ahhh, casts....
 		QTreturn[a] = pow(QT, a);
 }
 
+void text_between
+(const char * source, const char * init, const char * end, char * destination)	{
+	int cur = 0;
+	int match = 0;
+	int ndest = 0;
+	bool searching = true;
+	while(source[cur])	{
+		if(searching)	{
+			while(source[cur+match] == init[match])	{
+				match++;
+			}
+			if(init[match] == '\0')	{
+				cur += match;
+				searching = false;
+				continue;
+			}
+			cur += 1 + match;
+			match = 0;
+		}
+		else	{
+			match = 0;
+			while(source[cur+match] == end[match])	{
+				if(end[match++] == '\0')	{
+					destination[ndest] = '\0';
+					return;
+				}
+			}
+			do	{
+				destination[ndest++] = source[cur++];
+			}
+			while(match-- > 0);
+		}
+	}
+}

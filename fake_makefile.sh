@@ -1,1 +1,1 @@
-cat src/cashtag/*>fake_out.cx
+cat src/chashtag/*>fake_out.sh
