@@ -6,22 +6,14 @@
 #include <cstring>
 #include <ctime>
 
-Neuron::Neuron(char * a, tipo_neuronio tipo, float threshold, int id)	{
+Neuron::Neuron(char * a, tipo_neuronio tipo, float threshold)	{
 	strcpy(identifier,a);
 	this->tipo = tipo;
 	this->threshold = threshold;
 }
 
 Neuron::Neuron(const char* arquivo)	{
-	std::ifstream file;
-	file.open(arquivo);
-	
-	char curline[1024];
-	
-	// file okay e n atingiu EOF
-	while(file.good())	{
-		file.getline(curline,sizeof(curline));
-	}
+	load_from_file(arquivo);
 }
 
 Neuron::~Neuron()	{
@@ -38,26 +30,62 @@ void Neuron::output_to_file(const char* path)	{
 	output_to_file(identifier, path);
 }
 void Neuron::output_to_file(const char* identifier, const char* path)	{
-	char name[256]; 
+	char name[256] = ""; 
 	strcat(name,path);
-	strcat(name,"\\neuron_");
+	make_dir(path);
+	std::cout << "Output";
+	strcat(name,"/neuron_");
 	strcat(name, identifier);
+	strcpy(this->name,name);
 	std::ofstream file;
 	file.open(name,std::ofstream::out | std::ofstream::app);
 
+	std::cout << name << std::endl;
 	file << "Inicio: " << time(NULL) << "\n\n";
 
-	file << "Neuronio " << identifier << ":\n\n"; 
-	file << "Tipo: " << tipo << "\n";
+	file << "Neuronio " << identifier << ":..\n\n"; 
+	file << "Tipo: " << tipo << "..\n";
 	file << "Threshold: ";
 	// file << "kVector:\n" << printVector(kVector) << "\n";
-	file << "Connections: " << conexoes.size() << "\n\n"  << printConnections(conexoes) << "\n";
+	file << "Connections: " << conexoes.size() << "..\n\n"  << printConnections(conexoes) << "..\n";
 
 	file.close();
 }
-void make_connection(Neuron& a, const Neuron& b)	{
-	a.make_connection(b);
+
+connection_to_make Neuron::load_from_file(const char * arquivo)	{
+	std::ifstream file;
+	file.open(arquivo);
+	
+	char curline[1024];
+	char tempsto[128];
+	int nline = 0;
+	
+	// file okay e n atingiu EOF
+	while(file.good())	{
+		file.getline(curline,sizeof(curline));
+		nline++;
+/*
+		if(nline > 2)	{
+			if(nline == 3)	{
+				text_between(curline,"Neuronio ",":..",tempsto);
+				strcpy(identifier,tempsto);
+			}else if()	{
+				text_between(curline,"Tipo: ","..",tempsto);
+				tipo = atoi(tempsto);
+			}
+		}
+*/
+	}
 }
-void Neuron::make_connection(const Neuron& b)	{
-	// isso ta errado, outro parametro eh o strength, que eh std::vector
+
+void make_connection(Neuron& a, Neuron& b, const double* k)	{
+	a.make_connection(b,k);
+}
+void Neuron::make_connection(Neuron& b, const double* k)	{
+	connection temp;
+	temp.c_neuronio = &b;
+	for(int i=0;i<K_STR;++i)	{
+		temp.k_strength[i] = k[i];
+	}
+	conexoes.push_back(temp);
 }

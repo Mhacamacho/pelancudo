@@ -13,4 +13,7 @@ N dotproduct(const std::vector<N> &a, const std::vector<N> &b)	{
 	return sum;
 }
 void QTVector(double, std::vector<double>&);
-void text_between(const char*,const char*, const char*, char*);
+int text_between(const char*,const char*, const char*, char*);
+int RGB_to_int(char,char,char);
+void make_dir(const char*);
+char * itoa(int, char*);

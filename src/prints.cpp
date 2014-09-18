@@ -20,7 +20,7 @@ char * printConnections(std::vector<connection> &conexoes)	{
 		buffer[where++] = '\n';
 		strcat(buffer,"k_strength: ");
 		where += 12;
-		for(int j = 0; j < K_STRENGTH_SZ; j++)	{
+		for(int j = 0; j < K_STR; j++)	{
 			temp = sprintf(buffer + where,PFLOAT_PREC,i->k_strength[j]);
 			where += temp;
 		}

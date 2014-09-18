@@ -1,0 +1,146 @@
+Pessoas: 2
+Probabilidade: 0.002778
+
+Pessoas: 3
+Probabilidade: 0.008277
+
+Pessoas: 4
+Probabilidade: 0.016331
+
+Pessoas: 5
+Probabilidade: 0.02724
+
+Pessoas: 6
+Probabilidade: 0.040398
+
+Pessoas: 7
+Probabilidade: 0.056118
+
+Pessoas: 8
+Probabilidade: 0.07412
+
+Pessoas: 9
+Probabilidade: 0.095243
+
+Pessoas: 10
+Probabilidade: 0.116527
+
+Pessoas: 11
+Probabilidade: 0.140566
+
+Pessoas: 12
+Probabilidade: 0.167222
+
+Pessoas: 13
+Probabilidade: 0.194766
+
+Pessoas: 14
+Probabilidade: 0.222718
+
+Pessoas: 15
+Probabilidade: 0.253337
+
+Pessoas: 16
+Probabilidade: 0.283643
+
+Pessoas: 17
+Probabilidade: 0.315015
+
+Pessoas: 18
+Probabilidade: 0.347194
+
+Pessoas: 19
+Probabilidade: 0.37995
+
+Pessoas: 20
+Probabilidade: 0.410807
+
+Pessoas: 21
+Probabilidade: 0.443964
+
+Pessoas: 22
+Probabilidade: 0.475202
+
+Pessoas: 23
+Probabilidade: 0.507626
+
+Pessoas: 24
+Probabilidade: 0.537992
+
+Pessoas: 25
+Probabilidade: 0.569194
+
+Pessoas: 26
+Probabilidade: 0.597563
+
+Pessoas: 27
+Probabilidade: 0.627061
+
+Pessoas: 28
+Probabilidade: 0.654634
+
+Pessoas: 29
+Probabilidade: 0.680502
+
+Pessoas: 30
+Probabilidade: 0.706118
+
+Pessoas: 31
+Probabilidade: 0.730231
+
+Pessoas: 32
+Probabilidade: 0.753619
+
+Pessoas: 33
+Probabilidade: 0.775283
+
+Pessoas: 34
+Probabilidade: 0.795245
+
+Pessoas: 35
+Probabilidade: 0.814299
+
+Pessoas: 36
+Probabilidade: 0.83286
+
+Pessoas: 37
+Probabilidade: 0.848362
+
+Pessoas: 38
+Probabilidade: 0.863818
+
+Pessoas: 39
+Probabilidade: 0.878359
+
+Pessoas: 40
+Probabilidade: 0.891702
+
+Pessoas: 41
+Probabilidade: 0.902955
+
+Pessoas: 42
+Probabilidade: 0.914019
+
+Pessoas: 43
+Probabilidade: 0.924315
+
+Pessoas: 44
+Probabilidade: 0.932686
+
+Pessoas: 45
+Probabilidade: 0.940813
+
+Pessoas: 46
+Probabilidade: 0.948489
+
+Pessoas: 47
+Probabilidade: 0.954826
+
+Pessoas: 48
+Probabilidade: 0.960926
+
+Pessoas: 49
+Probabilidade: 0.965657
+
+Pessoas: 50
+Probabilidade: 0.970504
