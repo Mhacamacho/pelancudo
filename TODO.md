@@ -1,16 +1,31 @@
 <h2> TODO </h2><hr>
 <ul>
-	<ol> Fazer biblioteca com as funcoes de movimento e recepcao de dados do robo; </ol>
-	<ol> Biblioteca dos neuronios e robos (classes ou structs); </ol>
-	<ol> Adicionar funcoes limitantes (restricoes nas regras); </ol>
+	<li> Criar output thinker(output neuron + conection) </li>
+	<li> Create population(conjunto de thinker) </li>
+	<li> Fazer funcao que seleciona os melhores(reproducao baseada em fitness)  </li>
+	<li> Fazer o fitness </li>
+	<li> Criar desafiante </li>
+	<li> Action functions </li>
+	<li> Charge functions </li>
+	<li> Fazer branches de neuronios (pegar as melhores caracteristicas de cada um ) </li>
+	<li> SUPER NEURON (EH MEHGHERD) </li>
+</ul>
 
 
 <h3> DONE </h3><hr>
 
-	<ul><li> Criar README e TODO </li></ul>
+	<ul>
+	<li> Criar README e TODO </li> 
+	<li> Funcoes basicas dos neurons </li>
+	
+
+
+	</ul>
+	
 
 <h3> ADDED </h3><hr>
-
-	Itens 1, 2, 3.
+	<ul>
+	<li> Itens 1 a 9, removidos 1 a 3 antigos </li>
+	</ul>
 
 
