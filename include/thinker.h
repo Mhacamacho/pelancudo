@@ -13,7 +13,8 @@ class Thinker	{
 	public:
 		int pontuacao;
 		Thinker();
-		Thinker(std::vector<Neuron>, int (*)(Thinker));
+		Thinker(std::vector<Neuron>;
+		int (*)(Thinker));
 		Thinker(const char*);
 		
 		void output_to_file(const char*);
