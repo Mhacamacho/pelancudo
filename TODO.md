@@ -14,9 +14,9 @@
 
 <h3> DONE </h3><hr>
 
-	<ul><li> Criar README e TODO </li> 
+	<ul>
+	<li> Criar README e TODO </li> 
 	<li> Funcoes basicas dos neurons </li>
-	</ul>
 	
 
 
@@ -24,7 +24,8 @@
 	
 
 <h3> ADDED </h3><hr>
-
-	Itens 1, 2, 3.
+	<ul>
+	<li> Itens 1 a 9, removidos 1 a 3 antigos </li>
+	</ul>
 
 
