@@ -17,12 +17,16 @@ char * printConnections(std::vector<connection> &conexoes)	{
 		where += 12;
 		strcat(buffer,i->c_neuronio->identifier);
 		where += strlen(i->c_neuronio->identifier);
+		buffer[where++] = '.';
+		buffer[where++] = '.';
 		buffer[where++] = '\n';
-		strcat(buffer,"k_strength: ");
-		where += 12;
+		strcat(buffer,"k_strength:");
+		where += 11;
 		for(int j = 0; j < K_STR; j++)	{
+			buffer[where++] = ' ';
 			temp = sprintf(buffer + where,PFLOAT_PREC,i->k_strength[j]);
 			where += temp;
+			buffer[where++] = ' ';
 		}
 		buffer[where++] = '\n';
 	}

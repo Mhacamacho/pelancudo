@@ -11,9 +11,9 @@ int main()	{
 	}
 	std::cout << dotproduct<int>(a,b);
 
-	char teste[] = "Um teste do text_between quero o que esta entre: __isso:: e maisa08912_isso__:'";
+	char teste[] = "1231203 123131 3850534 018204";
 	char resultado[20];
-	char * isso1 = "__isso::";
-	text_between(teste,isso1,"_isso__:'",resultado);
+	char * isso1 = " ";
+	text_between(teste,isso1," ",resultado);
 	std::cout << resultado;
 }

@@ -23,13 +23,21 @@ struct connection_to_make	{
 
 class Neuron	{
 	private:
-		double charge[MAX_QT_POWER];
+		double charge;
+		double vcharge[MAX_QT_POWER];
 		float threshold;
 		char name[256];
 	public:
 		std::vector<connection> conexoes;
 		char identifier[16];
 		tipo_neuronio tipo;
+
+		// se tipo == SENSITIVo, charge_id deve ser diferente de 0.
+		// todos os neuronios motores tem action_id.
+		int charge_id;
+		int action_id;
+
+		void set_charge();
 
 		Neuron();
 		Neuron(char * a, tipo_neuronio tipo, float threshold);
@@ -38,7 +46,7 @@ class Neuron	{
 		
 		void output_to_file(const char*);
 		void output_to_file(const char*, const char*);
-		connection_to_make load_from_file(const char * arquivo);
+		std::vector<connection_to_make> load_from_file(const char * arquivo);
 
 		void make_connection(Neuron&, const double *);
 };
