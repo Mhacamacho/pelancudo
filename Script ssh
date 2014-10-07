@@ -1,0 +1,10 @@
+\\Não sei se era isso que imaginava, mas ta aqui
+
+#!/bin/bash
+USERNAME=username
+HOSTS=“host1 host2….”
+SCRIPT="./programa”
+echo “Caregando"
+for HOSTNAME in ${HOSTS};do
+     ssh -l ${USERNAME} ${HOSTNAME} “${SCRIPT} 
+DONE
